@@ -1,4 +1,4 @@
-##For Basic Functionalities
+## For Basic Functionalities
 ## How to run the code
 - git clone https://github.com/Abishekarun12/FarmEasy.git
 - cd laravel-starter
