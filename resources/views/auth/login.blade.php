@@ -1,7 +1,7 @@
 <x-guest-layout>
-    <div class="font-sans min-h-screen antialiased bg-gray-900 pt-24 pb-5">
+    <div class="font-sans min-h-screen antialiased bg-white-900 pt-24 pb-5">
         <div class="flex flex-col justify-center sm:w-96 sm:m-auto mx-5 mb-5 space-y-8">
-          <h1 class="font-bold text-center text-4xl text-yellow-500">Admin<span class="text-blue-500">Login</span></h1>
+          <h1 class="font-bold text-center text-5xl text-yellow-500">Admin<span class="text-green-700">Login</span></h1>
             <!-- Session Status -->
             <x-auth-session-status class="mb-4" :status="session('status')" />
             <!-- Validation Errors -->
@@ -23,12 +23,12 @@
 
               <div class="flex flex-col-reverse sm:flex-row sm:justify-between items-center">
 
-                <button type="submit" class="bg-blue-500 text-white font-bold px-5 py-2 rounded focus:outline-none shadow hover:bg-blue-700 transition-colors m-auto">Log In</button>
+                <button type="submit" class="bg-blue-500 text-white font-bold px-5 py-2 rounded focus:outline-none shadow hover:bg-green-700 transition-colors m-auto">Log In</button>
               </div>
             </div>
           </form>
           <div class="flex justify-center text-gray-500 text-sm">
-            <p>Copyright <script>document.write(new Date().getFullYear());</script></p>
+            <p>Copyright<script>document.write(new Date().getFullYear());</script></p>
           </div>
         </div>
     </div>
