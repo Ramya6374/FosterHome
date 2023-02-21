@@ -1,7 +1,7 @@
 ## For Basic Functionalities
 ## How to run the code
 - git clone https://github.com/Abishekarun12/FarmEasy.git
-- cd laravel-starter
+- cd Farm Easy (Check and do it)
 - cp .env.example `.env`
 - open .env and update DB_DATABASE (database details)
 - run : `composer install`
