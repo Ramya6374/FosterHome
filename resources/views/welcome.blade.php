@@ -1,6 +1,7 @@
 <x-front-guest-layout>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap" rel="stylesheet">
 
+    {{-- <main style="background-image: url('https://media.tenor.com/PKNAKWqJgI4AAAAC/farm-farmer.gif');" class="font-montserrat" --}}
     <main class="bg-white font-montserrat">
         <header class="h-24 sm:h-32 flex items-center">
             <div class="container mx-auto px-6 sm:px-12 flex items-center justify-between">
