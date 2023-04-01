@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\Admin\{
     ProfileController,
     MailSettingController,
@@ -20,6 +21,8 @@ use App\Http\Controllers\Admin\{
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/admin/upload',[PageController::class,'uploadpage']);
 
 
 Route::get('/test-mail',function(){
