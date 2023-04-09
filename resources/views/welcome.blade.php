@@ -1,19 +1,23 @@
 <x-front-guest-layout>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap" rel="stylesheet">
 
-    {{-- <main style="background-image: url('https://media.tenor.com/PKNAKWqJgI4AAAAC/farm-farmer.gif');" class="font-montserrat" --}}
-    <main class="bg-white font-montserrat">
+    <main style="background-image: url('{{ asset('images/bgvideo.gif') }}');background-size: cover;"
+     class="font-montserrat"
+    {{-- <main class="bg-white font-montserrat"> --}}
         <header class="h-24 sm:h-32 flex items-center">
             <div class="container mx-auto px-6 sm:px-12 flex items-center justify-between">
+
                 <div class="text-black font-black text-2xl flex items-center">
-                    <span class="w-6 h-6 rounded-full bg-blue-500 mr-4"></span> Farm Easy
+                    <div class="w-16 h-16 mr-4">
+                        <img src="{{ asset('images/logo.png') }}" alt="">
+                    </div>
+                    <span>Farm Easy</span>
                 </div>
                 <div class="flex items-center">
                     <nav class="text-black text-lg hidden lg:flex items-center">
 
-                        @if(Route::has('admin.login'))
-                                <a href="{{ route('admin.login') }}" class="py-2 px-6 flex hover:text-blue-500">Admin</a>
-
+                        @if (Route::has('admin.login'))
+                            <a href="{{ route('admin.login') }}" class="py-2 px-6 flex hover:text-blue-500">Admin</a>
                         @endif
 
                         @if (Route::has('login'))
@@ -22,7 +26,8 @@
                             @else
                                 <a href="{{ route('login') }}" class="py-2 px-6 flex hover:text-blue-500">Log in</a>
                                 @if (Route::has('register'))
-                                    <a href="{{ route('register') }}" class="ml-4 py-2 px-6 flex hover:text-blue-500">Register</a>
+                                    <a href="{{ route('register') }}"
+                                        class="ml-4 py-2 px-6 flex hover:text-blue-500">Register</a>
                                 @endif
                             @endauth
                         @endif
@@ -35,16 +40,33 @@
                 </div>
             </div>
         </header>
-        <div class="container mx-auto px-6 sm:px-12 flex flex-col-reverse sm:flex-row items-center">
-            <div class="sm:w-2/5 flex flex-col items-start mt-8 sm:mt-0">
-                <h1 class="text-4xl lg:text-6xl leading-none mb-4"><strong class="font-black">A Farmer's Products Selling</strong> Web</h1>
-                <p class="lg:text-lg mb-4 sm:mb-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
-                <a href="https://abishek-portfolio.vercel.app/" class="font-semibold text-lg bg-blue-500 hover:bg-blue-400 text-white py-3 px-10 rounded-full">Creators</a>
+
+        <section>
+            <div class="container mx-auto px-6 sm:px-12 flex flex-col-reverse sm:flex-row items-center gap-10 ">
+                <div class=" flex flex-col items-start mt-8 sm:mt-0 ">
+                    <h1 class="text-4xl lg:text-6xl leading-none mb-4"><strong class="font-black">A Farmer's Products
+                            Selling</strong> Web</h1>
+                    <p class="lg:text-lg mb-4 sm:mb-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                        diam</p>
+                    <a href="https://abishek-portfolio.vercel.app/"
+                        class="font-semibold text-lg bg-blue-500 hover:bg-blue-400 text-white py-3 px-10 rounded-full">Creators</a>
+                </div>
+                <div class="">
+                    <img src="https://media4.giphy.com/media/eh0X7QwmxiXihecJud/giphy.gif?cid=6c09b952quzttq69muk85q0zrpmg4wd5atf34meb1aj6evfk&rid=giphy.gif&ct=s"
+                        alt="">
+                </div>
             </div>
-            <div class="sm:w-3/5">
-                <img src="https://media4.giphy.com/media/eh0X7QwmxiXihecJud/giphy.gif?cid=6c09b952quzttq69muk85q0zrpmg4wd5atf34meb1aj6evfk&rid=giphy.gif&ct=s" alt="">
+        </section>
+
+        <section class="container mx-auto px-6 sm:px-12">
+            <div >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JzPfMbG1vrE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
-        </div>
+        </section>
+
     </main>
 
 
