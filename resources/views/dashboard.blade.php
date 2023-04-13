@@ -15,7 +15,14 @@
         </main>
         
     </div>
-    <div class="table-responsive">
+
+    <div class="max-w-10xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-green overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-12 bg-green border-b border-white-200">
+                    <a href="{{ route('admin.posts.index')}}">Try nowww.. &rarr;</a>
+                </div>
+            </div>
+    {{-- <div class="table-responsive">
             <table class="text-left w-full border-collapse">
                 <thead>
                   <tr>
@@ -26,7 +33,7 @@
                   </tr>
                 </thead>
                 <tbody>
-        </table>
+        </table> --}}
     </div>
 </div>
 

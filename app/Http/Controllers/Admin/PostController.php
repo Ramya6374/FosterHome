@@ -50,13 +50,15 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $data = new Post();
-
-        $file = $request->file;
-        $filename=time().'.'.$file->getClientOriginalExtension();
-        $data->file=$filename;
-        $request->file()->move('assets',$file);
-        // $data->save();
+        dd('post suceeded');
+        // $data = new Post();
+        // $file = $request->file;
+        // $filename=time().'.'.$file->getClientOriginalExtension();
+        // // $request->$filename()->move('assets',$file);
+        // // $path = $request->file('file')->storeAs('assets', $filename);
+        // $file->move(public_path('/assets'), end($filename));
+        // $request = Storage::url($request);
+        // $data->file=$filename;
 
 
         //Info Collection

@@ -2,13 +2,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap" rel="stylesheet">
 
     <main style="background-image: url('{{ asset('images/bgvideo.gif') }}');background-size: cover;"
-     class="font-montserrat"
+     class="font-montserrat">
     {{-- <main class="bg-white font-montserrat"> --}}
-        <header class="h-24 sm:h-32 flex items-center">
+        <header class="h-24 sm:h-32 pt-6 flex items-center">
             <div class="container mx-auto px-6 sm:px-12 flex items-center justify-between">
 
-                <div class="text-black font-black text-2xl flex items-center">
-                    <div class="w-16 h-16 mr-4">
+                <div class="text-black font-black text-4xl flex items-center">
+                    <div class="w-24 h-18 mr-6">
                         <img src="{{ asset('images/logo.png') }}" alt="">
                     </div>
                     <span>Farm Easy</span>
@@ -44,26 +44,35 @@
         <section>
             <div class="container mx-auto px-6 sm:px-12 flex flex-col-reverse sm:flex-row items-center gap-10 ">
                 <div class=" flex flex-col items-start mt-8 sm:mt-0 ">
-                    <h1 class="text-4xl lg:text-6xl leading-none mb-4"><strong class="font-black">A Farmer's Products
-                            Selling</strong> Web</h1>
-                    <p class="lg:text-lg mb-4 sm:mb-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                        diam</p>
+                    <h1 class="text-4xl lg:text-6xl leading-none mb-4"><strong class="font-black">
+                        A Farmer's Helper
+                    </strong>
+                        <br>
+                         Web
+                        </h1>
+                        <br>
+                    <p class="lg:text-lg mb-4 sm:mb-12">"To me, 
+                        there's nothing more special than providing food for other families,
+                        <br>
+                         and that's what we do out here."</p>
+                        <br>
                     <a href="https://abishek-portfolio.vercel.app/"
                         class="font-semibold text-lg bg-blue-500 hover:bg-blue-400 text-white py-3 px-10 rounded-full">Creators</a>
                 </div>
-                <div class="">
+                {{-- <div class="mb-4 sm:mb-12">
                     <img src="https://media4.giphy.com/media/eh0X7QwmxiXihecJud/giphy.gif?cid=6c09b952quzttq69muk85q0zrpmg4wd5atf34meb1aj6evfk&rid=giphy.gif&ct=s"
                         alt="">
-                </div>
+                </div> --}}
             </div>
         </section>
 
         <section class="container mx-auto px-6 sm:px-12">
             <div >
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JzPfMbG1vrE"
+                <img src="{{ asset('images/Ak.png') }}" alt="">
+                {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/JzPfMbG1vrE"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                    allowfullscreen></iframe> --}}
             </div>
         </section>
 
