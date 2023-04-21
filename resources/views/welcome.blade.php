@@ -13,7 +13,7 @@
                     </div>
                     <span>Foster
                         <br>
-                        Home
+                        Homes
                     </span>
                         <br>
                 </div>
