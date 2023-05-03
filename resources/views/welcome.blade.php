@@ -13,15 +13,15 @@
                     </div>
                     <span>Foster
                         <br>
-                        Homes
+                        Home
                     </span>
                         <br>
                 </div>
                 <div class="flex items-center">
-                    <nav class="text-pink text-lg hidden lg:flex items-center">
+                    <nav class="text-white text-lg hidden lg:flex items-center">
 
                         @if (Route::has('admin.login'))
-                            <a href="{{ route('admin.login') }}" class="py-2 px-6 flex hover:text-blue-500">Admin</a>
+                            <a href="{{ route('admin.login') }}" class="py-2 px-6 flex hover:text-red-500">Admin</a>
                         @endif
 
                         @if (Route::has('login'))
@@ -59,8 +59,7 @@
                         </h1>
                         <br>
                     <p class="lg:text-lg mb-4 sm:mb-12">
-                        
-                        <br>
+                         <br>
                          </p>
                         <br>
                     <a href="https://abishek-portfolio.vercel.app/"
